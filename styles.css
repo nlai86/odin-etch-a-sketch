@@ -1,0 +1,30 @@
+body {
+    background-color:#c90a0a;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    /*
+    height: 50%;
+    width: 50%;
+    margin-left: auto; 
+    margin-right: auto; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 1px black;
+    width: 408px;
+    height: 408px;
+}
+
+.grid {
+    border: solid 1px black;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
