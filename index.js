@@ -1,14 +1,18 @@
-const container = document.querySelector(".container");
-let hovered = 0;
-
-for (let i = 0; i < 16; i++) {
-    let grid = document.createElement('div');
-    grid.className = "grid";
-    container.appendChild(grid);
-}  
-
-document.querySelector(".grid").addEventListener('mouseenter', function (e) {
-    if (document.getElementsByClassName(".grid").getPropertyValue("background-color") == "white") {
-        document.querySelector(".grid").setAttribute('style' , 'background-color: blue;') ; 
+function createGrid(x) {
+    for (var rows = 0; rows < x; rows++) {
+        for (var columns = 0; columns < x; columns++) {
+            let grid = document.createElement("div");
+            grid.className = "grid";
+            document.querySelector(".container").appendChild(grid);
+        };
+    };
+    let grids = document.getElementsByClassName("grid");
+    for (let i = 0; i < grids.length; i++){
+        grids[i].style.width = String(800/x) + "px";
+        grids[i].style.height = String(800/x) + "px";
     }
-});
+
+}; 
+
+createGrid(16);
+
