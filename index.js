@@ -14,5 +14,13 @@ function createGrid(x) {
 
 }; 
 
+function draw(e) {
+    event.target.style.backgroundColor = "black";
+}
+
 createGrid(16);
 
+let gridsList = document.getElementsByClassName("grid");
+for (let i = 0; i < gridsList.length; i++){
+    gridsList[i].addEventListener("mouseover", draw);
+}

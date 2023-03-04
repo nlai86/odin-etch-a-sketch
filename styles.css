@@ -3,31 +3,17 @@ body {
 }
 
 .grid {
-    /*
-    background-color: white;
-    width: auto;
-    height: 100px;
-    border: solid 1px black; */
-
 	margin:0;
 	padding:0;
 	border:none;
 	outline:1px solid #000;
 	display:inline-block;
-    background-color: white;
+    background-color: #C0C0C0;
 }
 
 .container {
-    /*
-    display: flex;
-    border: solid 1px black;
-    height: auto;
-    width: 1000px;
-    height: 1000px; */
-
 	position: relative;
 	top: 30px;
-	/*outline:1px solid #000;*/
 	font-size: 0;
 	margin:auto;
 	height:800px;
