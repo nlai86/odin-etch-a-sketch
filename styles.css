@@ -23,3 +23,10 @@ body {
 
     
 }
+
+.controls {
+	margin: auto;
+    width: 50%;
+	text-align: center;
+}
+

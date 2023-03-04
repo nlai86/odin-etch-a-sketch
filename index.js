@@ -15,12 +15,17 @@ function createGrid(x) {
 }; 
 
 function draw(e) {
-    event.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = "black";
 }
 
-createGrid(16);
+function newGrid(e) {
+    let numGrid = window.prompt("How many squares per side would you like? (100 Maximum)");
+    createGrid(numGrid);
 
-let gridsList = document.getElementsByClassName("grid");
-for (let i = 0; i < gridsList.length; i++){
-    gridsList[i].addEventListener("mouseover", draw);
+    let gridsList = document.getElementsByClassName("grid");
+    for (let i = 0; i < gridsList.length; i++){
+        gridsList[i].addEventListener("mouseover", draw);
+    }
 }
+ 
+document.querySelector(".new-grid").addEventListener("click", newGrid);
